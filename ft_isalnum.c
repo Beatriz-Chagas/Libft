@@ -3,16 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/27 02:23:25 by marvin            #+#    #+#             */
-/*   Updated: 2025/07/27 02:23:25 by marvin           ###   ########.fr       */
+/*   Created: 2025/07/22 01:49:44 by bchagas-          #+#    #+#             */
+/*   Updated: 2025/07/28 17:49:12 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    return (ft_isalpha(c) || ft_isdigit(c));
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
+		|| (c >= '0' && c <= '9'));
 }
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	printf ("%d",ft_isalnum('5'));
+// 	return (0);
+// }
