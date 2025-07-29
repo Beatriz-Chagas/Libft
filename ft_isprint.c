@@ -6,9 +6,11 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 02:07:55 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/07/22 02:10:07 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/07/28 20:17:20 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

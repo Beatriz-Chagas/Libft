@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/22 01:49:44 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/07/28 20:17:03 by bchagas-         ###   ########.fr       */
+/*   Created: 2025/07/29 17:59:22 by bchagas-          #+#    #+#             */
+/*   Updated: 2025/07/29 17:59:34 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
-		|| (c >= '0' && c <= '9'));
+	
 }
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	printf ("%d",ft_isalnum('5'));
-// 	return (0);
-// }

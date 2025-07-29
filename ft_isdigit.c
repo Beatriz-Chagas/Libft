@@ -6,9 +6,11 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 01:30:29 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/07/22 03:50:56 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/07/28 20:17:16 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

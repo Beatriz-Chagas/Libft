@@ -6,19 +6,18 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 02:15:20 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/07/28 17:06:19 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/07/28 20:10:27 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int	c)
+int	ft_tolower(int c)
 {
 	if ((c >= 'a' && c <= 'z'))
 		c += 32;
 	return (c);
 }
-
 // #include <stdio.h>
 // int	main(void)
 // {
