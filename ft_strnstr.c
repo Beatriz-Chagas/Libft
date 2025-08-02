@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 03:21:27 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/02 04:33:45 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/02 04:36:28 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 // #include <stdio.h>
-
 // int main() {
 //   const char *string = "hello world ";
 //   const char *substring = "wor";
 //   char *result = ft_strnstr(string, substring, 10);
-
 //   if (result != NULL) {
 //     printf("Substring encontrada em: %s\n", result);
 //   } else {
