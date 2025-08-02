@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 12:41:56 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/02 14:10:48 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/02 15:14:04 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (fd <0)
-		return;
+	if (fd < 0)
+		return ;
 	write(fd, &c, 1);
 }

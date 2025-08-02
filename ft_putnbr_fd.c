@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 14:22:34 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/02 14:50:58 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/02 15:13:41 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putnbr_fd(int n, int fd)
 	unsigned int	i;
 
 	if (fd < 0)
-		return;
+		return ;
 	i = n;
 	if (n < 0)
 	{
@@ -25,7 +25,7 @@ void	ft_putnbr_fd(int n, int fd)
 		i = -n;
 	}
 	if (i >= 10)
-		ft_putnbr_fd(i/10, fd);
+		ft_putnbr_fd(i / 10, fd);
 	ft_putchar_fd((i % 10) + '0', fd);
 }
 // #include <unistd.h>
