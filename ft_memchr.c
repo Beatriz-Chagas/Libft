@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 20:23:23 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/01 21:24:25 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/01 21:48:40 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return (( char *)&ptr[i]);
 		i++;
 	}
+	if (i == '\0')
+		return ((char *)&ptr[i]);
 	return (NULL);
 }
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main() {
-	char str[] = "Hello, world!";
-	char *res = ft_memchr(str, 'l', strlen(str));
-	printf("%s", res);
-	return (0);
-}
+// int main() {
+// 	char str[] = "Hello, world!";
+// 	char *res = ft_memchr(str, 'l', strlen(str));
+// 	printf("%s", res);
+// 	return (0);
+// }
