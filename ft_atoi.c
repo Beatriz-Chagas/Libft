@@ -6,13 +6,13 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 02:01:36 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/02 02:50:28 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/02 03:28:48 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	result;

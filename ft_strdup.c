@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 02:52:16 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/02 03:18:28 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/02 03:29:34 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strdup(const char *src)
 {
-	int	len;
+	int		len;
 	char	*dest;
 
-	if (!src )
+	if (!src)
 		return (NULL);
 	len = ft_strlen(src);
 	dest = (char *)malloc(len + 1);
