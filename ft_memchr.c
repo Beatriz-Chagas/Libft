@@ -1,36 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/29 16:52:13 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/01 21:23:01 by bchagas-         ###   ########.fr       */
+/*   Created: 2025/08/01 20:23:23 by bchagas-          #+#    #+#             */
+/*   Updated: 2025/08/01 21:24:25 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	i;
+	const unsigned char	*ptr;
+	unsigned char	byte;
+	size_t	i;
 
-	i = (unsigned char)c;
-	while (*s)
+	ptr = (const unsigned char *)s;
+	byte = (unsigned char)c;
+	i = 0;
+	while (i < n)
 	{
-		if (*s == c)
-			return ((char *)s);
-		s++;
+		if (ptr[i] == byte)
+			return (( char *)&ptr[i]);
+		i++;
 	}
-	if (i == '\0')
-		return ((char *)s);
 	return (NULL);
 }
-// #include <stdio.h>
+#include <stdio.h>
+#include <string.h>
 
-// int main() {
-//	char minhaString[] = "Hello, world!";
-//	printf("%s", ft_strchr(minhaString, 'l'));
-//	return 0;
-// }
+int main() {
+	char str[] = "Hello, world!";
+	char *res = ft_memchr(str, 'l', strlen(str));
+	printf("%s", res);
+	return (0);
+}
