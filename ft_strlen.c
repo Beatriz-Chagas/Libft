@@ -6,18 +6,18 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 00:51:51 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/07/28 20:17:28 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/02 01:02:15 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (str[i])
+	while (s[i])
 		i++;
 	return (i);
 }
