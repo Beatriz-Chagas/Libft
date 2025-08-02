@@ -36,15 +36,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 //     char src[] = "Hello, world!";
 //     char dest[50];
 //     char dest_std[50];
-//     // Usando a sua função ft_memcpy
 //     ft_memcpy(dest, src, strlen(src) + 1);
-//     // Usando a função padrão para comparação
-//     memcpy(dest_std, src, strlen(src) + 1);
 //     printf("Resultado com ft_memcpy:  %s\n", dest);
-//     // Verifica se os dois resultados são iguais
-//     if (strcmp(dest, dest_std) == 0)
-//         printf("ft_memcpy funciona corretamente.\n");
-//     else
-//         printf("Há um erro em ft_memcpy.\n");
 //     return 0;
 // }

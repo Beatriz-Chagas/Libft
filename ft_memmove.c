@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 22:02:26 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/01 22:33:29 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/01 23:18:15 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,32 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	unsigned char	*s;
 	size_t			i;
 
-	if (src == NULL || dest == NULL || len == NULL)
-		return (dest);
+	if (src == NULL && dest == NULL)
+		return (NULL);
 	d = (unsigned char *) dest;
 	s = (unsigned char *) src;
 	i = 0;
+	if (d < s)
+	{
+		while (i < len)
+		{
+		d[i] = s[i];
+		i++;
+		}
+	}
+	else
+	{
+		while (len--)
+			d[len] = s[len];
+	}
+	return (dest);
 }
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char str1[] = "125345";
+
+// 	ft_memmove(str1 + 3, str1, 4);
+// 	printf("Custom ft_memmove: %s\n", str1);
+// 	return 0;
+// }
