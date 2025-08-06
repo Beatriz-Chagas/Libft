@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 18:26:06 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/04 18:26:35 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/06 19:17:07 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,4 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	
 }

@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 04:40:49 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/02 11:41:08 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/06 19:09:55 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 	size_t	total;
 
+	total = 0;
 	if (count != 0 && total / count != size)
 		return (NULL);
 	total = count * size;

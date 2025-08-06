@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 18:29:55 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/04 21:35:17 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/06 19:15:58 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,29 +25,25 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i -= start;
 	if (len < i)
 		i = len;
-	sub = ft_calloc(i + 1, sizeof(char));
+	sub = (char *)malloc(i + 1);
 	if (!sub)
 		return (NULL);
 	ft_memcpy(sub, s + start, i);
+	sub[i] = '\0';
 	return (sub);
 }
-
-#include <stdio.h>
-
-int main(void)
-{
-	char *str = "banana";
-	char *sub1 = ft_substr(str, 2, 3);  // espera: "nan"
-	char *sub2 = ft_substr(str, 10, 5); // espera: ""
-	char *sub3 = ft_substr(str, 1, 10); // espera: "anana"
-
-	printf("sub1: %s\n", sub1);
-	printf("sub2: %s\n", sub2);
-	printf("sub3: %s\n", sub3);
-
-	free(sub1);
-	free(sub2);
-	free(sub3);
-
-	return 0;
-}
+// #include <stdio.h>
+// int main(void)
+// {
+// 	char *str = "banana";
+// 	char *sub1 = ft_substr(str, 2, 3);  // espera: "nan"
+// 	char *sub2 = ft_substr(str, 10, 5); // espera: ""
+// 	char *sub3 = ft_substr(str, 1, 10); // espera: "anana"
+// 	printf("sub1: %s\n", sub1);
+// 	printf("sub2: %s\n", sub2);
+// 	printf("sub3: %s\n", sub3);
+// 	free(sub1);
+// 	free(sub2);
+// 	free(sub3);
+// 	return 0;
+// }
