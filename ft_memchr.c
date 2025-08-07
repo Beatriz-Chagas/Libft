@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 20:23:23 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 02:21:38 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/07 03:27:51 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	byte;
 	size_t			i;
 
-	ptr = ( unsigned char *)s;
+	ptr = (unsigned char *)s;
 	byte = (unsigned char)c;
 	i = 0;
 	while (i < n)
