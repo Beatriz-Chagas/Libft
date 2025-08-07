@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 05:48:00 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 05:57:59 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/07 06:22:30 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	t_list	*tsl;
 
 	if (!lst || !del)
-		return (NULL);
+		return ;
 	tsl = *lst;
 	while (tsl)
 	{

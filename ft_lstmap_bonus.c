@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 06:03:41 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 06:10:27 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/07 06:24:23 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*nlist;
-	t_list	*nnode;
+	void	*nnode;
 	void	*ncont;
 
 	nlist = NULL;
