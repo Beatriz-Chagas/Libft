@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 16:52:13 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/01 21:23:01 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/07 01:36:42 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned char	i;
-
-	i = (unsigned char)c;
-	while (*s)
+	while (*s != (char)c)
 	{
-		if (*s == c)
-			return ((char *)s);
+		if (!*s)
+			return (NULL);
 		s++;
 	}
-	if (i == '\0')
-		return ((char *)s);
-	return (NULL);
+	return ((char *)s);
 }
 // #include <stdio.h>
 
 // int main() {
-//	char minhaString[] = "Hello, world!";
-//	printf("%s", ft_strchr(minhaString, 'l'));
-//	return 0;
+// 	char minhaString[] = "Hello, world!";
+// 	printf("%s", ft_strchr(minhaString, 'l'));
+// 	return 0;
 // }
