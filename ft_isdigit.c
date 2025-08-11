@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 01:30:29 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/07/28 20:17:16 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:03:08 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
-// #include <stdio.h>
-// int	main (void)
-// {
-// 	printf ("%d", ft_isdigit ('d'));
-// 	return (0);
-// }

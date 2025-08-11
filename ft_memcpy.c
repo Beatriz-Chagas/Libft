@@ -30,13 +30,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-// #include <stdio.h>
-// int main(void)
-// {
-//     char src[] = "Hello, world!";
-//     char dest[50];
-//     char dest_std[50];
-//     ft_memcpy(dest, src, strlen(src) + 1);
-//     printf("Resultado com ft_memcpy:  %s\n", dest);
-//     return 0;
-// }

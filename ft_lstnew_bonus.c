@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 05:19:11 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 05:26:33 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/08 19:47:19 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list	*nnode;
+	t_list	*n_node;
 
-	nnode = malloc(sizeof(t_list));
-	if (!nnode)
+	n_node = malloc(sizeof(t_list));
+	if (!n_node)
 		return (NULL);
-	nnode->content = content;
-	nnode->next = NULL;
-	return (nnode);
+	n_node->content = content;
+	n_node->next = NULL;
+	return (n_node);
 }

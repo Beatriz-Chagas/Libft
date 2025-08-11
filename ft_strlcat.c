@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 01:23:42 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/04 19:50:16 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:04:16 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t destsize)
 	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
-// #include <stdio.h>
-// int	main()
-// {
-// 	char str1[50] = "A dona aranha ";
-// 	char str2[] = "subiu pela parede";
-// 	size_t res;
-// 	res = ft_strlcat(str1, str2, 50);
-// 	printf("Resultado concatenado: \"%s\"\n", str1);
-// 	printf("Valor retornado: %zu\n", res);
-// 	return 0;
-// }

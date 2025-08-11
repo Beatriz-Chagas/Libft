@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 00:57:34 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/07/28 20:17:08 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:36:10 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ int	ft_isalpha(int c)
 {
 	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }
-// #include <stdio.h>
-// int	main (void)
-// {
-// 	printf("%d", ft_isalpha ('4'));
-// 	return (0);
-// }

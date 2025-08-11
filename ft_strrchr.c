@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 17:59:22 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 06:46:15 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:20:33 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-// #include <stdio.h>
-
-// int main() {
-//   char minhaString[] = "Hello, world!";
-//     printf("%s", ft_strrchr(minhaString, 'e'));
-//   return 0;
-// }

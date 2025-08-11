@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 22:02:26 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/02 12:37:03 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:03:40 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,3 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	}
 	return (dest);
 }
-// #include <stdio.h>
-// int main(void)
-// {
-// 	char str1[] = "125345";
-
-// 	ft_memmove(str1 + 3, str1, 4);
-// 	printf("Custom ft_memmove: %s\n", str1);
-// 	return 0;
-// }

@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 02:45:41 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 06:48:47 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:04:34 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-// #include <stdio.h>
-// int	main()
-// {
-// 	char str1[] = "12345678";
-// 	char str2[] = "1234567";
-
-// 	printf("%d", ft_strncmp(str1, str2, 8));
-// 	return (0);
-// }

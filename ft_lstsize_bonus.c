@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 05:32:03 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 05:35:08 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/08 20:12:43 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	ft_lstsize(t_list *lst)
 	i = 0;
 	while (lst)
 	{
-		i++;
 		lst = lst-> next;
+		i++;
 	}
 	return (i);
 }

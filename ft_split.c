@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 02:23:30 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 04:52:49 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/11 19:39:53 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,14 @@ static int	count_word(const char *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	char		**splited;
+	char		**splitt;
 	const char	*start;
 	int			i;
 
 	if (!s)
 		return (NULL);
-	splited = (char **)malloc((count_word((char *)s, c) + 1) * sizeof(char *));
-	if (!splited)
+	splitt = (char **)malloc((count_word((char *)s, c) + 1) * sizeof(char *));
+	if (!splitt)
 		return (NULL);
 	i = 0;
 	while (*s)
@@ -46,24 +46,8 @@ char	**ft_split(char const *s, char c)
 		while (*s && *s != c)
 			s++;
 		if (s > start)
-		splited[i++] = ft_substr(start, 0, s - start);
+		splitt[i++] = ft_substr(start, 0, s - start);
 	}
-	splited[i] = NULL;
-	return (splited);
+	splitt[i] = NULL;
+	return (splitt);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-// 	char **res = ft_split("banana,melancia,,uva", ',');
-
-// 	for (int i = 0; res[i]; i++)
-// 		printf("res[%d] = \"%s\"\n", i, res[i]);
-
-// 	// não esquecer de liberar!
-// 	for (int i = 0; res[i]; i++)
-// 		free(res[i]);
-// 	free(res);
-
-// 	return 0;
-// }

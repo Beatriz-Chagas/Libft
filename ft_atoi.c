@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 02:01:36 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/02 03:28:48 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:02:53 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ int	ft_atoi(const char *str)
 		result = result * 10 + (*str++ - '0');
 	return (i * result);
 }
-// #include<stdio.h>
-// int	main()
-// {
-// 	char	str[] = "+1234a599656";
-// 	printf("%d \n", ft_atoi(str));
-// 	return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 02:22:51 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 03:33:14 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:03:16 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,13 +53,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-// #include <stdio.h>
-
-// int main(void)
-// {
-// 	printf("%s\n", ft_itoa(1234));
-// 	printf("%s\n", ft_itoa(-5678));
-// 	printf("%s\n", ft_itoa(0));
-// 	printf("%s\n", ft_itoa(-2147483648));
-// 	return 0;
-// }

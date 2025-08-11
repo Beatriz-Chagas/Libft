@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 14:04:15 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/07 07:05:17 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/08 19:37:09 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ void	ft_putstr_fd(char *s, int fd)
 	while (*s)
 		write (fd, s++, 1);
 }
-NULL

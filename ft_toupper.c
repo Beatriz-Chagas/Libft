@@ -6,7 +6,7 @@
 /*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 02:10:47 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/07/28 17:52:26 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/08/09 00:20:52 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-// #include <stdio.h>
-// int	main(void)
-// {
-// 	printf("%c", ft_toupper ('t'));
-// 	return (0);
-// }
