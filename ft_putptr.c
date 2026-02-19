@@ -1,40 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bchagas- <bchagas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 22:02:26 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/12/27 04:33:57 by bchagas-         ###   ########.fr       */
+/*   Created: 2025/08/12 05:07:57 by bchagas-          #+#    #+#             */
+/*   Updated: 2025/11/30 04:53:35 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t len)
+int	ft_putptr(void *ptr)
 {
-	unsigned char	*d;
-	unsigned char	*s;
-	size_t			i;
+	int	p;
 
-	if (src == NULL && dest == NULL)
-		return (NULL);
-	d = (unsigned char *) dest;
-	s = (unsigned char *) src;
-	i = 0;
-	if (d < s)
-	{
-		while (i < len)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
-	else
-	{
-		while (len--)
-			d[len] = s[len];
-	}
-	return (dest);
+	if (!ptr)
+		return (ft_putstr("(nil)"));
+	p = ft_putstr("0x") + ft_puthex((unsigned long)ptr, 0);
+	return (p);
 }

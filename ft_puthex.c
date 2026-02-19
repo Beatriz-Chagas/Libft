@@ -1,40 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bchagas- <bchagas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 22:02:26 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/12/27 04:33:57 by bchagas-         ###   ########.fr       */
+/*   Created: 2025/08/12 05:52:13 by bchagas-          #+#    #+#             */
+/*   Updated: 2025/11/30 04:53:35 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t len)
+int	ft_puthex(unsigned long n, char upper)
 {
-	unsigned char	*d;
-	unsigned char	*s;
-	size_t			i;
+	int	res;
+	int	digit;
 
-	if (src == NULL && dest == NULL)
-		return (NULL);
-	d = (unsigned char *) dest;
-	s = (unsigned char *) src;
-	i = 0;
-	if (d < s)
-	{
-		while (i < len)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
+	res = 0;
+	if (n > 15)
+		res += ft_puthex(n / 16, upper);
+	digit = n % 16;
+	if (digit <= 9)
+		res += ft_putchar(digit + '0');
 	else
 	{
-		while (len--)
-			d[len] = s[len];
+		if (upper)
+			res += ft_putchar(digit - 10 + 'A');
+		else
+			res += ft_putchar(digit - 10 + 'a');
 	}
-	return (dest);
+	return (res);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bchagas- <bchagas-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: bchagas- <bchagas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 02:23:30 by bchagas-          #+#    #+#             */
-/*   Updated: 2025/08/11 19:39:53 by bchagas-         ###   ########.fr       */
+/*   Updated: 2025/12/22 04:51:05 by bchagas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,23 @@ char	**ft_split(char const *s, char c)
 		while (*s && *s != c)
 			s++;
 		if (s > start)
-		splitt[i++] = ft_substr(start, 0, s - start);
+			splitt[i++] = ft_substr(start, 0, s - start);
 	}
 	splitt[i] = NULL;
 	return (splitt);
+}
+
+void	ft_free_split(char **arr)
+{
+	int	i;
+
+	i = 0;
+	if (!arr)
+		return ;
+	while (arr[i])
+	{
+		free(arr[i]);
+		i++;
+	}
+	free(arr);
 }
